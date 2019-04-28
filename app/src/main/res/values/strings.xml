@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">eargoAndroid</string>
+    <string name="error_message">\t Oops! Sorry, something went wrong!</string>
+</resources>

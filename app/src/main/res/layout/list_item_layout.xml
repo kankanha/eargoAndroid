@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="@dimen/label_textsize" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/date_label"
+            android:textSize="@dimen/label_textsize" />
+
+        <TextView
+            android:id="@+id/summary_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_label"
+            android:text="Summary: "
+            android:textSize="@dimen/label_textsize" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_toRightOf="@+id/summary_label"
+            android:textSize="@dimen/label_textsize" />
+
+        <TextView
+            android:id="@+id/tempLow_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary_label"
+            android:text="Low Temperature: "
+            android:textSize="@dimen/label_textsize" />
+
+        <TextView
+            android:id="@+id/tempLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary"
+            android:layout_toRightOf="@id/tempLow_label"
+            android:textSize="@dimen/label_textsize" />
+
+
+        <TextView
+            android:id="@+id/tempHigh_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tempLow_label"
+            android:text="High Temperature: "
+            android:textSize="@dimen/label_textsize" />
+
+        <TextView
+            android:id="@+id/tempHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tempLow"
+            android:layout_toRightOf="@+id/tempHigh_label"
+            android:textSize="@dimen/label_textsize" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/summary" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

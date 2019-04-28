@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgVw"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="@dimen/img_top_padding" />
+
+    <TextView
+        android:id="@+id/txtSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgVw"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/text_title_top_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tmpLowLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSummary"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="Low Temperature: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/txtTemperatureLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSummary"
+        android:layout_toRightOf="@+id/tmpLowLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/tmpHighLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSummary"
+        android:layout_toStartOf="@+id/tmpHigh"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="High Temperature: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/tmpHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtSummary"
+        android:layout_marginEnd="22dp"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/pressureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tmpLowLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="Pressure: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/txtPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pressureLabel"
+        android:layout_below="@id/txtTemperatureLow"
+        android:layout_toRightOf="@+id/pressureLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/humidityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pressureLabel"
+        android:layout_toStartOf="@+id/tmpHighLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="Humidity: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pressureLabel"
+        android:layout_alignStart="@+id/tmpHighLabel"
+        android:paddingRight="@dimen/text_status_right_padding"
+        android:paddingTop="@dimen/text_title_top_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/UVLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tmpHighLabel"
+        android:layout_below="@+id/tmpLowLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="UV Index: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+
+    <TextView
+        android:id="@+id/txtUVIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tmpLowLabel"
+        android:layout_toEndOf="@+id/tmpHighLabel"
+        android:paddingRight="@dimen/text_status_right_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/visibilityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressureLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="Visibility: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPressure"
+        android:layout_toRightOf="@+id/visibilityLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/windspeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tmpHighLabel"
+        android:layout_below="@+id/pressureLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:text="Wind Speed: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressureLabel"
+        android:layout_toEndOf="@+id/tmpHighLabel"
+        android:paddingLeft="@dimen/text_title_left_padding"
+        android:paddingTop="@dimen/text_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_subtitle" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_message"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_title"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
